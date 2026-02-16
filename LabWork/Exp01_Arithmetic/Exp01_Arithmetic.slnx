@@ -1,3 +1,4 @@
 <Solution>
   <Project Path="Exp01_Arithmetic/Exp01_Arithmetic.csproj" />
+  <Project Path="Hello/Hello.csproj" Id="4fcc8319-2c52-4aba-8109-a4b883dfa48e" />
 </Solution>
