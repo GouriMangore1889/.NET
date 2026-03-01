@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="Exp01_Arithmetic/Exp01_Arithmetic.csproj" Id="042a541f-24e3-48a5-a932-2469a097ae27" />
+  <Project Path="Exp02_OOP/Exp02_OOP.csproj" Id="1d5cf6ab-ff29-430b-a324-52ff37cfa4b2" />
+  <Project Path="Exp03_SOLID/Exp03_SOLID.csproj" Id="344dc1cc-8e4d-49c4-9e37-3991b711066c" />
+  <Project Path="Exp04_Delegates/Exp04_Delegates.csproj" />
+  <Project Path="exp05_Async_Await/exp05_Async_Await.csproj" Id="02bc6fa4-0ab7-465b-b06a-dbbe4892ee33" />
+</Solution>

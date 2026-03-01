@@ -1,29 +1,23 @@
 ﻿// See https://aka.ms/new-console-template for more information
-class Program
-{
-    public delegate void mydel();  //it contains function address//used for event handling
-    public static void f1()
-    {
-        Console.WriteLine("f1");
+using System;
 
-    }
-     public static void f2()
+namespace DelegateDemo
+{
+    class Program
     {
-        Console.WriteLine("f2");
-    }
-    
-    public static void f3()
-    {
-        Console.WriteLine("f3");
-    }
-    public static void Main(string[] args)
-    {
-        mydel del = f1;
-        del+=f2;
-        del();
-        del -= f2;
-        del += f3;
-        del();
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Activity 1: Delegate Calculation");
+            CalculationDelegate.Run();
+
+            Console.WriteLine("\nActivity 2: Multicast Delegate");
+            MulticastDelegate.Run();
+
+            Console.WriteLine("\nActivity 3: Sorting and LINQ");
+            SortingWithLambda.Run();
+
+            Console.ReadLine();
+        }
     }
 }
 // Event Handling in C#
