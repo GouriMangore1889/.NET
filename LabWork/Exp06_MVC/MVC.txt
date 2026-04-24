@@ -1,0 +1,15 @@
+MVC==
+     it is a design pattern 
+     it saperates application into 3 different responcibility ==1)model 2)view 3)controller
+model==> data layer =>model represent data and business logic
+view ==> UI layer==>it represent user interface (what user see in browser)
+controller==> brain of MVC ==> it handles user request and application flow
+                           ==> connects model and view
+
+activity
+   1) why mvc used in company
+   2) what is mvc folder structure
+   3) what is routing in mvc
+   4) what is difference between mvc and reser pages
+   5) when clicking on customer menu what will happen
+   
