@@ -1,0 +1,24 @@
+@page
+@model CRMProject.Pages.LoginModel
+
+<div class="login-container">
+    <div class="login-card">
+
+        <h2>Login</h2>
+
+        <form method="post">
+            <label>Username</label>
+            <input asp-for="Username" />
+
+            <label>Password</label>
+            <input asp-for="Password" type="password" />
+
+            <button type="submit">Login</button>
+
+            <div class="error-msg">
+                @Model.ErrorMessage
+            </div>
+        </form>
+
+    </div>
+</div>

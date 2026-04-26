@@ -1,0 +1,45 @@
+@model Student
+
+<div class="form-container">
+    <form asp-controller="Student" asp-action="Create" method="post">
+        @Html.AntiForgeryToken()
+
+        <h2>Create Student</h2>
+
+        <div class="form-group">
+            <label>Name</label>
+            <input asp-for="Name" class="form-input" />
+            <span asp-validation-for="Name" class="error"></span>
+        </div>
+
+        <div class="form-group">
+            <label>Email</label> 
+            <input asp-for="Email" class="form-input" />
+            <span asp-validation-for="Email" class="error"></span>
+        </div>
+
+        <div class="form-group">
+            <label>Age</label>
+            <input asp-for="Age" class="form-input" />
+            <span asp-validation-for="Age" class="error"></span>
+        </div>
+
+        <div class="form-group">
+            <label>Password</label>
+            <input asp-for="Password" type="password" class="form-input" />
+            <span asp-validation-for="Password" class="error"></span>
+        </div>
+
+        <div class="form-group">
+            <label>Phone</label>
+            <input asp-for="Phone" class="form-input" />
+            <span asp-validation-for="Phone" class="error"></span>
+        </div>
+
+        <button type="submit" class="btn-submit">Submit</button>
+    </form>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

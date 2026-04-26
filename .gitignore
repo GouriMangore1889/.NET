@@ -1,19 +1,65 @@
-# Visual Studio
+# =========================
+# Visual Studio / IDE
+# =========================
 .vs/
+.vscode/
+.idea/
 
-# Build output
+# =========================
+# Build Output
+# =========================
+bin/
+obj/
 **/bin/
 **/obj/
 
+# =========================
 # User-specific files
+# =========================
 *.user
 *.suo
 *.userosscache
 *.sln.docstates
+*.csproj.user
 
+# =========================
 # Logs
+# =========================
 *.log
 
-# OS files
+# =========================
+# OS Files
+# =========================
 Thumbs.db
 Desktop.ini
+.DS_Store
+
+# =========================
+# ASP.NET Core / Web
+# =========================
+wwwroot/lib/
+wwwroot/node_modules/
+
+
+# =========================
+# Environment / Secrets
+# =========================
+appsettings.Development.json
+
+# =========================
+# NuGet
+# =========================
+*.nupkg
+packages/
+.nuget/
+
+# =========================
+# Publish Output
+# =========================
+publish/
+
+# =========================
+# Temporary / Cache
+# =========================
+*.cache
+*.tmp

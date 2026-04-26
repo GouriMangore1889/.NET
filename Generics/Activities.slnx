@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="Generics/Generics.csproj" />
+  <Project Path="Generic_Class/Generic_Class.csproj" />
+  <Project Path="Lambda_Func/Lambda_Func.csproj" />
+</Solution>

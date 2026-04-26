@@ -1,0 +1,48 @@
+@page "{id:int}"
+@model CRMProject.Pages.Customer.Edit
+@{
+    ViewData["Title"] = "Edit Customer";
+}
+
+<h1>Edit Customer</h1>
+
+<div class="row">
+    <form method="post">
+
+        <input type="hidden" asp-for="Id" />
+
+        <div class="row mb-3">
+            <label class="col-sm-4 col-form-label">Name*</label>
+            <div class="col-sm-8">
+                <input class="form-control" asp-for="Name" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <label class="col-sm-4 col-form-label">Email*</label>
+            <div class="col-sm-8">
+                <input class="form-control" asp-for="Email" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <label class="col-sm-4 col-form-label">Phone*</label>
+            <div class="col-sm-8">
+                <input class="form-control" asp-for="Phone" />
+                <span asp-validation-for="Phone" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-4 offset-sm-4 d-grid">
+                <button type="submit" class="btn btn-primary">Update</button>
+            </div>
+            <div class="col-sm-4 d-grid">
+                <a asp-page="/Customer/Index" class="btn btn-secondary">Cancel</a>
+            </div>
+        </div>
+
+    </form>
+</div>
